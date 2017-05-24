@@ -1,0 +1,35 @@
+fastlane_version "2.3.0"
+
+default_platform :ios
+
+def pod_name
+  "AppleManagers"
+end
+
+
+def proj
+{
+    plist: "./#{pod_name}/Info.plist",
+    xcodeproj: "./#{pod_name}.xcodeproj/",
+    scheme: "#{pod_name}",
+}
+end
+
+#End share func to use lanes on ios_fastlane_keys.git
+
+platform :ios do 
+
+   lane :testing do
+        scan(scheme: "AppleManagers", code_coverage: true, derived_data_path: "./DerivedData", output_directory: "./reports")
+   end
+
+ after_all do |lane|
+   notification(message:"Finished lane: #{lane}")
+ end
+ 
+ error do |lane, exception|
+   notification(subtitle: "Erro in lane: #{lane}", message:"Erro in lane: #{exception}")
+ end
+ 
+end
+
