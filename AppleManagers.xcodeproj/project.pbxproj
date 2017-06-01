@@ -1302,7 +1302,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40037976B34946E8E4EFE7DF /* Pods-AppleManagers-AppleManagersUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 4F3EA6B935;
 				INFOPLIST_FILE = AppleManagersUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1317,7 +1317,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 35BED8ABA3DCDC2352C23BCC /* Pods-AppleManagers-AppleManagersUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = 4F3EA6B935;
 				INFOPLIST_FILE = AppleManagersUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
