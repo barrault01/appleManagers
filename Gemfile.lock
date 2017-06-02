@@ -160,7 +160,7 @@ GEM
       domain_name (~> 0.5)
     httpclient (2.8.3)
     hurley (0.2)
-    i18n (0.8.1)
+    i18n (0.8.4)
     json (2.1.0)
     jwt (1.5.6)
     kramdown (1.13.2)
@@ -256,4 +256,4 @@ DEPENDENCIES
   xcpretty-json-formatter
 
 BUNDLED WITH
-   1.13.6
+   1.15.1

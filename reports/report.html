@@ -110,7 +110,9 @@
       </section>
       <section class="right">
         <section id="counters">
-          <h2 id="test-count"><span class="number">20</span> tests</h2>
+          <h2 id="test-count"><span class="number">21</span> tests</h2>
+          
+            <h2 id="fail-count"><span class="number">2</span> failures</h2>
           
         </section>
         <section id="segment-bar">
@@ -143,7 +145,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testDataFromJSONFile');">
                 <td>
                   
-                    <h3 class="time">0.005s</h3>
+                    <h3 class="time">0.006s</h3>
                   
                 </td>
                 <td><h3 class="title">testDataFromJSONFile</h3></td>
@@ -198,7 +200,7 @@
               <tr class="test passing "  onclick="toggleDetails('testThatValideFileIsCorrect');">
                 <td>
                   
-                    <h3 class="time">0.005s</h3>
+                    <h3 class="time">0.004s</h3>
                   
                 </td>
                 <td><h3 class="title">testThatValideFileIsCorrect</h3></td>
@@ -243,7 +245,7 @@
               <tr class="test passing "  onclick="toggleDetails('testParsingJsonOfManagers');">
                 <td>
                   
-                    <h3 class="time">0.007s</h3>
+                    <h3 class="time">0.006s</h3>
                   
                 </td>
                 <td><h3 class="title">testParsingJsonOfManagers</h3></td>
@@ -266,7 +268,45 @@
         </section>
       
         
-        <section class="test-suite passing" id="AppleManagersTests.MainCoordinatorTests">
+        <section class="test-suite failing" id="ManagersAPITests.PokemonParserTests">
+          <section class="heading" onclick="toggleTests(this);">
+            <h3 class="title">ManagersAPITests.PokemonParserTests</h3>
+          </section>
+          <section class="tests">
+            <table>
+            
+              
+              <tr class="test failing "  onclick="toggleDetails('testParsingJsonOfPokemons');">
+                <td>
+                  
+                </td>
+                <td><h3 class="title">testParsingJsonOfPokemons</h3></td>
+              </tr>
+              
+                <tr class="details failing testParsingJsonOfPokemons">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">XCTAssertTrue failed - </section>
+                    
+                    
+                      <section class="test-detail snippet">            <span class="kt">XCTAssert</span><span class="p">(</span><span class="n">bulbizar</span><span class="o">.</span><span class="n">type</span><span class="o">!</span> <span class="o">==</span> <span class="p">[</span><span class="s">"Grass"</span><span class="p">,</span> <span class="s">"Poison"</span><span class="p">])</span>
+            <span class="kt">XCTAssert</span><span class="p">(</span><span class="n">bulbizar</span><span class="o">.</span><span class="n">img</span> <span class="o">==</span> <span class="s">"http://www.serebii.net/pokemongo/pokemon/001.png"</span><span class="p">)</span>
+            <span class="kt">XCTAssert</span><span class="p">(</span><span class="n">bulbizar</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s">"Bulbasaur"</span><span class="p">)</span>
+</section>
+                      <section class="test-detail">/Users/antoinebarrault/Documents/repos/perso/appleManagers/ManagersAPITests/PokemonParserTests.swift:33</section>
+                    
+                    
+                  </td>
+                </tr>
+              
+            
+            </table>
+          </section>
+        </section>
+      
+        
+        <section class="test-suite failing" id="AppleManagersTests.MainCoordinatorTests">
           <section class="heading" onclick="toggleTests(this);">
             <h3 class="title">AppleManagersTests.MainCoordinatorTests</h3>
           </section>
@@ -274,14 +314,29 @@
             <table>
             
               
-              <tr class="test passing "  onclick="toggleDetails('testThatMainCoordinatorPresentManagerCoordinator');">
+              <tr class="test failing "  onclick="toggleDetails('testThatMainCoordinatorPresentManagerCoordinator');">
                 <td>
-                  
-                    <h3 class="time">0.007s</h3>
                   
                 </td>
                 <td><h3 class="title">testThatMainCoordinatorPresentManagerCoordinator</h3></td>
               </tr>
+              
+                <tr class="details failing testThatMainCoordinatorPresentManagerCoordinator">
+                  <td></td>
+                  <td>
+                    
+                      <section class="test-detail reason">XCTAssertTrue failed - </section>
+                    
+                    
+                      <section class="test-detail snippet">        <span class="k">let</span> <span class="nv">isManagersViewControllerClass</span> <span class="o">=</span> <span class="n">rootViewController</span><span class="o">.</span><span class="nf">isKind</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="kt">ManagersViewController</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+        <span class="kt">XCTAssert</span><span class="p">(</span><span class="n">isManagersViewControllerClass</span><span class="p">)</span>
+
+</section>
+                      <section class="test-detail">/Users/antoinebarrault/Documents/repos/perso/appleManagers/AppleManagersTests/MainCoordinatorTests.swift:28</section>
+                    
+                    
+                  </td>
+                </tr>
               
             
             </table>
@@ -300,7 +355,7 @@
               <tr class="test passing "  onclick="toggleDetails('testBirthdayStringFormatter');">
                 <td>
                   
-                    <h3 class="time">0.003s</h3>
+                    <h3 class="time">0.004s</h3>
                   
                 </td>
                 <td><h3 class="title">testBirthdayStringFormatter</h3></td>
@@ -311,7 +366,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testBirthdayStringFormatterWithNoDate');">
                 <td>
                   
-                    <h3 class="time">0.001s</h3>
+                    <h3 class="time">0.002s</h3>
                   
                 </td>
                 <td><h3 class="title">testBirthdayStringFormatterWithNoDate</h3></td>
@@ -344,7 +399,7 @@
               <tr class="test passing "  onclick="toggleDetails('testThatIsApplyingManagerCorrectly');">
                 <td>
                   
-                    <h3 class="time">0.034s</h3>
+                    <h3 class="time">0.014s</h3>
                   
                 </td>
                 <td><h3 class="title">testThatIsApplyingManagerCorrectly</h3></td>
@@ -355,7 +410,7 @@
               <tr class="test passing odd"  onclick="toggleDetails('testThatIsShowPlaceholderForImageIfDownlaodFailed');">
                 <td>
                   
-                    <h3 class="time">0.005s</h3>
+                    <h3 class="time">0.004s</h3>
                   
                 </td>
                 <td><h3 class="title">testThatIsShowPlaceholderForImageIfDownlaodFailed</h3></td>
@@ -378,7 +433,7 @@
               <tr class="test passing "  onclick="toggleDetails('testThatMainCoordinatorPresentManagerCoordinator');">
                 <td>
                   
-                    <h3 class="time">0.509s</h3>
+                    <h3 class="time">0.513s</h3>
                   
                 </td>
                 <td><h3 class="title">testThatMainCoordinatorPresentManagerCoordinator</h3></td>

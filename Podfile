@@ -1,36 +1,25 @@
-# Uncomment the next line to define a global platform for your project
-
 platform :ios, '10.0'
+use_frameworks!
 
-target 'AppleManagers' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+target 'Pokedex' do
+
   pod 'SwiftLint'
   pod 'NibDesignable'
   pod 'AlamofireImage'
 
-  # Pods for AppleManagers
+  pod 'OHHTTPStubs/Swift'
+  pod 'OHHTTPStubs'
 
-  target 'AppleManagersTests' do
+  target 'PokedexTests' do
     inherit! :search_paths
-    pod 'OHHTTPStubs'
-    pod 'OHHTTPStubs/Swift'
-  end
-
-  target 'AppleManagersUITests' do
   end
 
 end
 
-target 'ManagersAPI' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
+target 'PokedexAPI' do
   pod 'SwiftLint'
 
-  # Pods for ManagersAPI
-
-  target 'ManagersAPITests' do
-    # Pods for testing
+  target 'PokedexAPITests' do
   end
 
 end

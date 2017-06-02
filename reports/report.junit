@@ -1,33 +1,40 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='AppleManagersTests.xctest' tests='20' failures='0'>
+<testsuites name='AppleManagersTests.xctest' tests='21' failures='2'>
   <testsuite name='ManagersAPITests.JsonParserTests' tests='9' failures='0'>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testBundleLoading' time='0.008'/>
-    <testcase classname='ManagersAPITests.JsonParserTests' name='testDataFromJSONFile' time='0.005'/>
+    <testcase classname='ManagersAPITests.JsonParserTests' name='testDataFromJSONFile' time='0.006'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testDataFromJSONFileWithFileThatNotExisted' time='0.001'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testPathForFileInBundle' time='0.001'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testPathForFileInBundleFileWithFileThatNotExisted' time='0.001'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testThatUnknowFileReturnNilIsCorrect' time='0.001'/>
-    <testcase classname='ManagersAPITests.JsonParserTests' name='testThatValideFileIsCorrect' time='0.005'/>
+    <testcase classname='ManagersAPITests.JsonParserTests' name='testThatValideFileIsCorrect' time='0.004'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testUrlForFileInBundle' time='0.001'/>
     <testcase classname='ManagersAPITests.JsonParserTests' name='testUrlForFileInBundleFileWithFileThatNotExisted' time='0.001'/>
   </testsuite>
   <testsuite name='ManagersAPITests.ManagerParserTests' tests='2' failures='0'>
-    <testcase classname='ManagersAPITests.ManagerParserTests' name='testParsingJsonOfManagers' time='0.007'/>
+    <testcase classname='ManagersAPITests.ManagerParserTests' name='testParsingJsonOfManagers' time='0.006'/>
     <testcase classname='ManagersAPITests.ManagerParserTests' name='testParsingWithUnknowFile' time='0.001'/>
   </testsuite>
-  <testsuite name='AppleManagersTests.MainCoordinatorTests' tests='1' failures='0'>
-    <testcase classname='AppleManagersTests.MainCoordinatorTests' name='testThatMainCoordinatorPresentManagerCoordinator' time='0.007'/>
+  <testsuite name='ManagersAPITests.PokemonParserTests' tests='1' failures='1'>
+    <testcase classname='ManagersAPITests.PokemonParserTests' name='testParsingJsonOfPokemons'>
+      <failure message='XCTAssertTrue failed - '>ManagersAPITests/PokemonParserTests.swift:33</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='AppleManagersTests.MainCoordinatorTests' tests='1' failures='1'>
+    <testcase classname='AppleManagersTests.MainCoordinatorTests' name='testThatMainCoordinatorPresentManagerCoordinator'>
+      <failure message='XCTAssertTrue failed - '>AppleManagersTests/MainCoordinatorTests.swift:28</failure>
+    </testcase>
   </testsuite>
   <testsuite name='AppleManagersTests.ManagerCollectionViewCellTests' tests='6' failures='0'>
-    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testBirthdayStringFormatter' time='0.003'/>
-    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testBirthdayStringFormatterWithNoDate' time='0.001'/>
+    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testBirthdayStringFormatter' time='0.004'/>
+    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testBirthdayStringFormatterWithNoDate' time='0.002'/>
     <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testLoadingCat' time='0.002'/>
     <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testThatCellClearOldImageOnApplyingManager' time='0.002'/>
-    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testThatIsApplyingManagerCorrectly' time='0.034'/>
-    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testThatIsShowPlaceholderForImageIfDownlaodFailed' time='0.005'/>
+    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testThatIsApplyingManagerCorrectly' time='0.014'/>
+    <testcase classname='AppleManagersTests.ManagerCollectionViewCellTests' name='testThatIsShowPlaceholderForImageIfDownlaodFailed' time='0.004'/>
   </testsuite>
   <testsuite name='AppleManagersTests.ManagerCoordinatorTests' tests='1' failures='0'>
-    <testcase classname='AppleManagersTests.ManagerCoordinatorTests' name='testThatMainCoordinatorPresentManagerCoordinator' time='0.509'/>
+    <testcase classname='AppleManagersTests.ManagerCoordinatorTests' name='testThatMainCoordinatorPresentManagerCoordinator' time='0.513'/>
   </testsuite>
   <testsuite name='AppleManagersTests.ManagersViewModelTests' tests='1' failures='0'>
     <testcase classname='AppleManagersTests.ManagersViewModelTests' name='testNumberOfManagerInRow' time='0.001'/>

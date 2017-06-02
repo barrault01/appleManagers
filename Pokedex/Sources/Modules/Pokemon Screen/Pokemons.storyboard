@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="r5b-Oa-Nl5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemons-->
+        <scene sceneID="PpP-lj-Dyt">
+            <objects>
+                <viewController id="Zps-86-0Tv" customClass="PokemonsViewController" customModule="AppleManagers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mUZ-gD-ilE"/>
+                        <viewControllerLayoutGuide type="bottom" id="aR1-fz-Nf6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cvh-P4-gZW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glc-eZ-fvK" customClass="PokemonsView" customModule="AppleManagers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="glc-eZ-fvK" firstAttribute="leading" secondItem="Cvh-P4-gZW" secondAttribute="leading" id="4lh-WZ-FNI"/>
+                            <constraint firstAttribute="trailing" secondItem="glc-eZ-fvK" secondAttribute="trailing" id="7AD-z3-GUm"/>
+                            <constraint firstItem="glc-eZ-fvK" firstAttribute="top" secondItem="Cvh-P4-gZW" secondAttribute="top" id="d47-CX-j1E"/>
+                            <constraint firstAttribute="bottom" secondItem="glc-eZ-fvK" secondAttribute="bottom" id="jFx-gd-8lD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pokemons" id="O7M-Sw-OxI"/>
+                    <connections>
+                        <outlet property="theView" destination="glc-eZ-fvK" id="3OH-ch-Dec"/>
+                        <outlet property="view" destination="Cvh-P4-gZW" id="8tq-1K-xwe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyk-CR-UCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="109.29535232383809"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n9d-AP-mB2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r5b-Oa-Nl5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ci-aG-Ed0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zps-86-0Tv" kind="relationship" relationship="rootViewController" id="sfm-Er-UFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SpB-Np-qLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="109"/>
+        </scene>
+    </scenes>
+</document>
